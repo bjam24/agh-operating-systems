@@ -63,6 +63,15 @@ Napisz skrypt, którego wywołanie jest następujące:
 $ ./skrypt09.sh <n>
 Skrypt wypisuje <n> elementów ciągu Fibonacciego.
 ## Zestaw zadań 2
+### Zadanie 1.
+
+### Zadanie 2.
+
+### Zadanie 3.
+
+### Zadanie 5.
+
+### Zadanie 6.
 
 ## Zestaw zadań 3
 
