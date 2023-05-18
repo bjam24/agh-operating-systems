@@ -63,8 +63,47 @@ Napisz skrypt, którego wywołanie jest następujące:
 $ ./skrypt09.sh <n>
 Skrypt wypisuje <n> elementów ciągu Fibonacciego.
 ## Zestaw zadań 2
+
 ## Zestaw zadań 3
+
 ## Zestaw zadań 4
+### Zadanie 1.
+Stos i sterta
+Napisać program, który działa wg schematu:
+Z funkcji głównej wywoływane są kolejno dwie funkcje:
+void statyczna();
+void dynamiczna();
+Realizujące odpowiednio statyczny i dynamiczny przydział pamięci.
+W funkcji statyczna() proszę utworzyć znacznych rozmiarów zmienną lokalną, automatyczną, np.: double tablica[10^6] i zatrzymać działanie programu, np. funkcją blokującą wczytywanie znaku z klawiatury.
+W funkcji dynamiczna() proszę utworzyć znacznych rozmiarów zmienną lokalną, dynamiczną, np.: double *tablica = new double[10^6] i zatrzymać działanie programu, np. funkcją blokującą wczytywanie znaku z klawiatury. Przed zakończeniem działania funkcji proszę pamiętać o zwolnieniu zajmowanej pamięci.
+Między wywołaniami funkcji statyczna() i dynamiczna() proszę wstrzymać działanie programu.
+Proszę w trakcie działania programu, w miejscach jego zatrzymania zaobserwować zajętość pamięci przez program (np. htop, /proc/[id]/smaps, itp.).
+Zsumuj wartości RSS w pliku /proc/[id]/smaps i odnieś do wartości RSS z htop.
+### Zadanie 2.
+Rozrost zajętości pamięci
+Warsztat: 
+(a) lista wskaźnikowa lub (b) tablica tablic.
+(a) Materiał do poznania:
+Lista wskaźnikowa / lista odsyłaczowa:
+AiSD-skrypt.pdf - strona 37, odniesienie do:
+Thomas Cormen, „Algorytmy i Struktury Danych”, rozdział 11, str. 240 – 244.
+(b) Zadeklarować tablicę (np. 1000 komórek) wskaźników do tablic 2-wymiarowych (np. 1000x1000) typu double.
+Napisać program, który przy pomocy (a) lub (b) rozrasta się do pewnej, zadanej wielkości, np. tak:
+$ ./zadanie02 <rozmiar>
+Program tworzy (a) lub (b) i oczekuje na naciśnięcie klawisza, aby zakończyć działanie.
+Proszę prześledzić działanie programu za pomocą: free, htop, vmstat oraz zawartość /proc
+Język programowania: dowolny, zalecany czysty ANSI C.
+Proszę dodać przed każdym utworzeniem nowej komórki (nowego elementu w (a) lub nowej tablicy w (b)) przerwę i zwrócić uwagę jak w czasie rozrasta się zajętość pamięci.
+### Zadanie 3.
+Kontrola zajętości pamięci
+Zapoznać się z rozwiązaniem ‘ulimit’ i w taki sposób zestawić ograniczenie, aby przerwać działanie programu z zadania 2 w zadanym momencie.
+Czy ulimit dotyczy konta, czy pojedynczego procesu ?
+### Zadanie 4.
+Śledzenie wykonania programu
+Zapoznać się z wynikiem działania programu strace, np.:
+$ strace date
+Proszę zinterpretować wynik działania.
+Lub napisać prosty program typu “Hello world”.
 ## Zestaw zadań 5
 ### zadanie 1.
 Badanie stopnia upakowania (kompresji)
