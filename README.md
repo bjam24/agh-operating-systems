@@ -66,3 +66,46 @@ Skrypt wypisuje <n> elementów ciągu Fibonacciego.
 ## Zestaw zadań 3
 ## Zestaw zadań 4
 ## Zestaw zadań 5
+### zadanie 1.
+Badanie stopnia upakowania (kompresji)
+Spakuj pliki dowolnym programem (gzip, zip) i wyjaśnij nowe rozmiary plików.
+### zadanie 2.
+Dowiązania
+Do pliku losowy.dat stwórz dowiązanie miękkie i twarde, odpowiedzio: losowy-soft.dat, losowy-hard.dat
+Korzystając z poleceń: ls, du oraz stat wyjaśnij zajętość przestrzeni przez poszczególne dowiązania.
+### zadanie 3.
+System plików
+Na pliku pusty.dat załóż system plików ext4 i zamontuj w systemie plików.
+Podpowiedź: polecenia mkfs.ext4 oraz mount
+Spraw, aby montowanie/odmontowywanie tego systemu plików możliwe było przez użytkownika bez uprawnień root (podpowiedź: plik /etc/fstab).
+### zadanie 6.
+Napisz polecenie/skrypt wykrywający wszystkie przypadki zapętlonego linkowania miękkiego.
+./sprawdz-miekkie-linki.sh <katalog>
+Podaj liczbę zapętleń (wypisz je) oraz długość poszczególnych zapętleń.
+### zadanie 7.
+Napisz polecenie/skrypt wykrywający wszystkie przypadki hardlinkowania.
+./sprawdz-twarde-linki.sh <katalog>
+Podpowiedzi:
+Sprawdzenie, ile dowiązań ma plik (wpis w pliku katalogu): stat <nazwa pliku>
+Znalezienie plików o zadanej liczbie dowiązań: find -links <parametr>
+### zadanie 8.
+Napisz polecenie/skrypt wypisujący statystykę plików w zadanym drzewie dla każdej konfiguracji ustawień dostępu.
+./statystyka-uprawnien.sh <katalog>
+rwxr-xr-x 20
+rw-rw-rw- 15
+….
+Ile będzie takich konfiguracji ? (pozycje od lewej)
+Pozycja 1: typ pliku: b, c, d, p, f (-), l, s = 7 możliwości
+Pozycja 2: r lub (-) = 2 możliwości
+Pozycja 3: w lub (-) = 2 możliwości
+Pozycja 4: x lub S lub (-) = 3 możliwości
+Pozycja 5: r lub (-) = 2 możliwości
+Pozycja 6: w lub (-) = 2 możliwości
+Pozycja 7: x lub S lub (-) = 3 możliwości
+Pozycja 8: r lub (-) = 2 możliwości
+Pozycja 9: w lub (-) = 2 możliwości
+Pozycja 7: x lub T lub t lub (-) = 4 możliwości
+Liczba możliwości: 16128
+Wypisać tylko te, dla których znaleziono pliki.
+
+
