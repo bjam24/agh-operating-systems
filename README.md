@@ -64,15 +64,50 @@ $ ./skrypt09.sh <n>
 Skrypt wypisuje <n> elementów ciągu Fibonacciego.
 ## Zestaw zadań 2
 ### Zadanie 1.
-
+Please, write a simple program that
+shows its PID, tip: getpid()
+stops using getchar()
+creates child and shows its pid, tip: fork()
+shows in child its PID and a parent PID (PPID), tip: getppid()
+stops using getchar()
+not a part of program, just run in terminal: show in OS: PID, PPID and a tree, tip: ps, htop, pidof, pstree
 ### Zadanie 2.
-
+Please, copy and extend a program from previous exercise:
+shows its PID, tip: getpid()
+stops using getchar()
+creates child and shows its pid, tip: fork()
+shows in child its PID and a parent PID (PPID), tip: getppid()
+stops using getchar()
+in a child process: create another child, that:
+shows its PID and a parent PID,
+show in OS: PID, PPID and a tree, tip: ps, htop, pidof, pstree
 ### Zadanie 3.
-
+Please, copy and extend a program from previous exercise:
+shows its PID, tip: getpid()
+stops using getchat()
+creates child and shows its pid, tip: fork()
+shows in child its PID and a parent PID (PPID), tip: getppid()
+stops using getchar()
+in a parent process: create another child, that:
+shows its PID and a parent PID,
+in a child process: create another child, that:
+shows its PID and a parent PID,
+show in OS: PID, PPID and a tree, tip: ps, htop, pidof, pstree
 ### Zadanie 5.
-
+Please, write a program (another.cc) that:
+says “Hello, I’m an another program!”
+stops using getchar()
+Please, write a program (exec.cc) that:
+says “Hello, I’m exec program!”
+stops using getchar()
+replaces own process and runs another.cc program, tip: exec()
+Please, explain using system commands like ps/htop what happen, when running exec.cc program.
 ### Zadanie 6.
-
+Please, write a program (system.cc) that:
+says “Hello, I’m system program!”
+stops using getchar()
+runs system command “ls -al /var/log/”, tip: system()
+Please, explain using system commands like ps/htop what happen, when running exec.cc program.
 ## Zestaw zadań 4
 ### Zadanie 1.
 Stos i sterta
