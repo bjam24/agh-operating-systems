@@ -62,3 +62,7 @@ f(x) = 2 * x ^ 5 + 6 * x ^ 4 - 5 * x ^ 3 + 0 * x ^ 2 + 8 * x - 3
 Napisz skrypt, którego wywołanie jest następujące:
 $ ./skrypt09.sh <n>
 Skrypt wypisuje <n> elementów ciągu Fibonacciego.
+## Zestaw zadań 2
+## Zestaw zadań 3
+## Zestaw zadań 4
+## Zestaw zadań 5
