@@ -73,8 +73,6 @@ Skrypt wypisuje <n> elementów ciągu Fibonacciego.
 
 ### Zadanie 6.
 
-## Zestaw zadań 3
-
 ## Zestaw zadań 4
 ### Zadanie 1.
 Stos i sterta
