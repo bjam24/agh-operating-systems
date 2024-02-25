@@ -1,4 +1,4 @@
-In this repository are gathered my numerous solved exercises from Operating Systems Laboratories on AGH. Therefore description of presented solved exercises is written in Polish.
+In this repository are gathered my numerous solved exercises from Operating Systems Laboratories on AGH.
 ## Zestaw zadań 1
 ### Zadanie 1.
 Napisz skrypt, którego wywołanie jest następujące:
