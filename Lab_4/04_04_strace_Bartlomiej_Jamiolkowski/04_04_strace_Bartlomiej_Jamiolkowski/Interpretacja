@@ -1,0 +1,22 @@
+Polecenie: Zapoznać się z wynikiem działania programu strace, np.: $ strace date.
+           Proszę zinterpretować wynik działania.
+
+$ gcc hello.c
+$ strace ./a.out
+
+Interpretacja:
+exceve() - ma 3 parametry:
+    - plik wykonywalny "./a.out()", 
+    - tablica argumentów ["./a.out"], 
+    - ciąg zmiennych srodowiskowych  ma warość 0, więc zakończył się sukcesem
+brk() - zwraca adres początku stosu, który jest później używany do alkoacji pamięci
+        brk(NULL)                               = 0x55d872d49000
+access() - ma 2 parametry:
+    - nazwa pliku
+    - tryb sprawdzania dostępności do pliku R_OK, -1 - sprawdzany plik jest nieobecny
+arch_prctt(): ustawia stan wątku specyficzny dla architektury. Tutaj ustawia 64-bitową bazę dla    rejestru FS do adresowania 0x7f82b0ff3740
+mprotect() - To wymaga ustawienia ochrony dla różnych regionów pamięci. PROT_READ służy do  odczytywania regionów pamięci.
+Program działa
+exit_group(0)                           = ?
++++ exited with 0 +++
+
